@@ -47,7 +47,7 @@ public class Main {
          */
 
         if (operators.length > 2)
-            throw new Exception("Формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
+            throw new Exception("Формат математической операции некорректен - два операнда и один оператор (+, -, /, *)");
         if (operators.length == 1 || operators.length == 0)
             throw new Exception("Недопустимые символы. Попробуйте еще раз.");
         String sign = operators[1];

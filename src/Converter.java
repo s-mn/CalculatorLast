@@ -28,10 +28,9 @@ public class Converter {
      * @param number результат выражения в арабской системе счисления
      * @return result арабское число в римской системе счисления
      */
-    public static String toRoman(int number)
-    {
+    public static String toRoman(int number) throws Exception {
         if (number == 0){
-            return "0";
+            throw new Exception("Ноль отсутствует в римской системе счисления");
         }
 
         Integer[] romanValueList = new Integer[] {
